@@ -2,7 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+    />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -12,40 +23,60 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Single Price Grid Component</title>
   </head>
-  <body class="grid h-screen w-screen place-items-center bg-lightgray">
-    <main class="max-w-lg p-6">
+  <body
+    class="grid min-h-screen place-items-center bg-lightgray py-6 font-karla"
+  >
+    <main
+      class="grid w-11/12 max-w-md grid-rows-3 overflow-hidden rounded-md bg-white lg:max-w-635 lg:grid-rows-layout"
+    >
       <!--SECTION #1-->
-      <div class="bg-white">
-        <h1>Join our community</h1>
-        <h3>30-day, hassle-free money back guarantee</h3>
-        <p>
+      <div class="row-start-1 row-end-2 flex flex-col w-full gap-4 p-6 lg:p-10 lg:gap-3 justify-center items-start">
+        <h1 class="mb-2 text-xl lg:text-2xl font-bold text-cyan lg:mb-3">Join our community</h1>
+        <h3 class="text-sm lg:text-lg font-bold leading-5 text-brightyellow">
+          30-day, hassle-free money back guarantee
+        </h3>
+        <p class="text-sm lg:text-base font-normal leading-6 text-grayishblue">
           Gain access to our full library of tutorials along with expert code
           reviews. Perfect for any developers who are serious about honing their
           skills.
         </p>
       </div>
       <!--SECTION #2-->
-      <div>
+      <div class="lg:flex row-start-2 row-end-4 lg:row-end-3 h-full w-full text-white">
         <!--top-->
-        <div>
-          <h2>Monthly Subscription</h2>
+        <div
+          class="lg:w-1/2 lg:h-full flex h-1/2 flex-col items-start justify-center gap-4 bg-cyan p-6 lg:p-10"
+        >
+          <h2 class="text-lg">Monthly Subscription</h2>
           <div>
-            <p>
-              <span>&dollar;29</span>
-              <span>per month</span>
+            <div>
+              <p class="flex items-center justify-start gap-3">
+                <span class="text-3xl">&dollar;29</span>
+                <span class="leading-6 text-white/50">per month</span>
+              </p>
+            </div>
+            <p class="text-base leading-6">
+              Full access for less than &dollar;1 a day
             </p>
           </div>
-          <p>Full access for less than &dollar;1 a day</p>
-          <button>Sign Up</button>
+          <button
+            class="mt-2 w-full rounded-md bg-brightyellow py-3 text-base font-bold shadow-2xl"
+          >
+            Sign Up
+          </button>
         </div>
         <!--bottom-->
-        <div>
-          <h2>Why Us</h2>
-          <p>
-            Tutorials by industry experts Peer &amp; expert code review Coding
-            exercises Access to our GitHub repos Community forum Flashcard decks
-            New videos every week
-          </p>
+        <div class="lg:h-full lg:w-1/2 flex h-1/2 flex-col gap-4 bg-cyan/90 p-6 justify-center items-start lg:p-10">
+          <h2 class="text-lg font-bold">Why Us</h2>
+          <ul class="text-sm font-normal text-white/50">
+            <li>Tutorials by industry experts</li>
+            <li>Peer &amp; expert code review</li>
+            <li>Coding exercises</li>
+            <li>Access to our GitHub repos</li>
+            <li>Community forum</li>
+            <li>Flashcard decks</li>
+            <li>New videos every week</li>
+          </ul>
         </div>
         <!---->
       </div>

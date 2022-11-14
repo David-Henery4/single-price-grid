@@ -10,9 +10,7 @@
   "author": "David Henery",
   "license": "ISC",
   "devDependencies": {
-    "prettier-plugin-tailwindcss": "^0.1.13"
-  },
-  "dependencies": {
+    "prettier-plugin-tailwindcss": "^0.1.13",
     "tailwindcss": "^3.2.4"
   }
 }
