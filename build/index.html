@@ -24,28 +24,34 @@
     <title>Single Price Grid Component</title>
   </head>
   <body
-    class="grid min-h-screen place-items-center bg-lightgray py-6 font-karla"
+    class="grid min-h-screen place-items-center bg-lightgray py-10 font-karla"
   >
     <main
       class="grid w-11/12 max-w-md grid-rows-3 overflow-hidden rounded-md bg-white lg:max-w-635 lg:grid-rows-layout"
     >
       <!--SECTION #1-->
-      <div class="row-start-1 row-end-2 flex flex-col w-full gap-4 p-6 lg:p-10 lg:gap-3 justify-center items-start">
-        <h1 class="mb-2 text-xl lg:text-2xl font-bold text-cyan lg:mb-3">Join our community</h1>
-        <h3 class="text-sm lg:text-lg font-bold leading-5 text-brightyellow">
+      <div
+        class="row-start-1 row-end-2 flex w-full flex-col items-start justify-center gap-4 p-6 lg:gap-3 lg:p-10"
+      >
+        <h1 class="mb-2 text-xl font-bold text-cyan lg:mb-3 lg:text-2xl">
+          Join our community
+        </h1>
+        <h3 class="text-sm font-bold leading-5 text-brightyellow lg:text-lg">
           30-day, hassle-free money back guarantee
         </h3>
-        <p class="text-sm lg:text-base font-normal leading-6 text-grayishblue">
+        <p class="text-sm font-normal leading-6 text-grayishblue lg:text-base">
           Gain access to our full library of tutorials along with expert code
           reviews. Perfect for any developers who are serious about honing their
           skills.
         </p>
       </div>
       <!--SECTION #2-->
-      <div class="lg:flex row-start-2 row-end-4 lg:row-end-3 h-full w-full text-white">
+      <div
+        class="row-start-2 row-end-4 h-full w-full text-white lg:row-end-3 lg:flex"
+      >
         <!--top-->
         <div
-          class="lg:w-1/2 lg:h-full flex h-1/2 flex-col items-start justify-center gap-4 bg-cyan p-6 lg:p-10"
+          class="flex h-1/2 flex-col items-start justify-center gap-4 bg-cyan p-6 lg:h-full lg:w-1/2 lg:p-10"
         >
           <h2 class="text-lg">Monthly Subscription</h2>
           <div>
@@ -66,7 +72,9 @@
           </button>
         </div>
         <!--bottom-->
-        <div class="lg:h-full lg:w-1/2 flex h-1/2 flex-col gap-4 bg-cyan/90 p-6 justify-center items-start lg:p-10">
+        <div
+          class="flex h-1/2 flex-col items-start justify-center gap-4 bg-cyan/90 p-6 lg:h-full lg:w-1/2 lg:p-10"
+        >
           <h2 class="text-lg font-bold">Why Us</h2>
           <ul class="text-sm font-normal text-white/50">
             <li>Tutorials by industry experts</li>
@@ -82,5 +90,13 @@
       </div>
       <!---->
     </main>
+    <footer class="absolute -bottom-14 w-full text-center lg:bottom-0">
+      <p>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-cyan/50"
+          >Frontend Mentor</a
+        >. Coded by <a href="#" class="text-cyan">David Henery</a>.
+      </p>
+    </footer>
   </body>
 </html>
