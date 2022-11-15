@@ -12,10 +12,10 @@ module.exports = {
       white: colors.white,
       red: colors.red,
     },
-    btnPx: "102px",
     extend: {
       screens: {
         mob: "20.62em",
+        lrgMob: "23.62em"
       },
       fontFamily: {
         karla: ["Karla", "sans-serif"],

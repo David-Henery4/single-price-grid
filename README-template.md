@@ -14,33 +14,25 @@ This is a solution to the [Single price grid component challenge on Frontend Men
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
 ### The challenge
 
-Users should be able to:
+Users are able to:
 
 - View the optimal layout for the component depending on their device's screen size
 - See a hover state on desktop for the Sign Up call-to-action
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![desktop](./screenshot/screenshot.png)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
+// LINKS TO BE ADDED
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
@@ -49,63 +41,76 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- [Tailwind-Css](https://reactjs.org/) - CSS Utility Library
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+My aim with this project was to practice using tailwind for the first time, and even though it was a small project I learn't a lot about tailwind from building this project.
 
-To see how you can add code snippets, see below:
+One of the main things I can take away for this project, is that I can see the immediate benefits of using utility classes to help build CSS UI a lot quicker than it would be to build them from scratch.
+For instance by default tailwind already removes the default stylings of buttons, like removing the background color and the outline but also sets the font-family to the main font-family of the project. Where as before hand we had to do this manually, and then apply our styles, but now we can just add the classes to apply our styles straight away without having to remove the defaults.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
+Another main benefit is using the tailwind config file, which is very customizable and can help to control the overall theme of the project. This can come in handy for many reasons. For example, it allows to create your custom values and spacing and it also lets you create your colour pallet for your project. This is very usefull especially when working with others because anyone can see whats being used thoughout the project and this would help keep the UI consistent by making sure we use the same values and styles.
+
+Here is the config file I used,
+it has a custom colour pallet along
+with some custom values that I added to the tailwind default values. It also has one custom media query which I also added to the default media queries.
+
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+/** @type {import('tailwindcss').Config} */
+const colors = require("tailwindcss/colors");
+
+module.exports = {
+  content: ["./build/*.html"],
+  theme: {
+    colors: {
+      cyan: "hsl(179, 62%, 43%)",
+      brightyellow: "hsl(71, 73%, 54%)",
+      lightgray: "hsl(204, 43%, 93%)",
+      grayishblue: "hsl(218, 22%, 67%)",
+      white: colors.white,
+      red: colors.red,
+    },
+    extend: {
+      screens: {
+        mob: "20.62em",
+        lrgMob: "23.62em"
+      },
+      fontFamily: {
+        karla: ["Karla", "sans-serif"],
+      },
+      spacing: {
+        25: "102px",
+      },
+      maxWidth: {
+        635: "635px",
+      },
+      gridTemplateRows: {
+      layout: "216px 259px",
+      },
+    },
+  },
+  plugins: [],
+};
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+Of course, these are just some of the benefits and features of using tailwind, and I look forward to learning and discovering more about it and using more complex features in bigger projects in the future.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Tailwind Documentation](https://tailwindcss.com/docs/installation) - This is the documention for tailwind and it helped massively, and I kept referencing it and learning more things about it as I was building this project. Also if you don't know the name of the utility classes you need, you can just search for the css property in the docs and it will show you the equivalent tailwind class that you need, as well as more information about it.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [David Henery](https://www.your-site.com)
+- Frontend Mentor - [@David-Henery4](https://www.frontendmentor.io/profile/David-Henery4)
+- linkedin - [David Henery](https://www.linkedin.com/in/david-henery-725458241)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
