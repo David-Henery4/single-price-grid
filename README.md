@@ -33,8 +33,8 @@ Users are able to:
 ### Links
 
 // LINKS TO BE ADDED
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/singlepricegridresponsive-cssgrid-flexbox-tailwind-2imG5rPcRD)
+- Live Site URL: [Single-Price-Grid](https://your-live-site-url.com)
 
 ## My process
 
